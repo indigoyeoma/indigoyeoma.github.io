@@ -2,3 +2,4 @@ ignore_folder
 .vscode
 commit.sh
 ignore
+.DS_Store   
