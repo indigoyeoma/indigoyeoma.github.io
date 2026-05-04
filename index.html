@@ -1,219 +1,284 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Jiwoo Kim</title>
-
     <meta name="author" content="Jiwoo Kim">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jiwoo Kim — ECE PhD student at Duke. Generative models, equivariance, and representation learning for robotic manipulation.">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link rel="icon" type="image/png" href="images/icon.png"> -->
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <table
-        style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-            <tr style="padding:0px">
-                <td style="padding:0px">
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr style="padding:0px">
-                                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                                    <p style="text-align:center">
-                                        <name>Jiwoo Kim</name>
-                                    </p>
-                                    <p>
-                                        I am an ECE Ph.D. student at Duke University, advised by 
-                                        <a href="https://people.duke.edu/~mp275/">Prof. Miroslav Pajic</a>. 
-                                        Previously, I obtained my EEE B.S. at Yonsei University, Republic of Korea, where I was fortunate to be advised by
-                                        <a href="https://mlcs.yonsei.ac.kr/Professor.html">Prof. Jongeun Choi</a>. 
-                                        I am interested in Generative AI, Efficient AI, Representation Learning, and Reinforcement Learning.
-                                    </p>
-                                    <p>
-                                        My research focuses on developing efficient and multi-modal AI for task execution in dynamic environments. 
-                                        During my undergraduate studies, I explored the application of equivariance and representation theory to robotic manipulation. 
-                                        Currently, I am investigating generative models to develop efficient policies for real-world robotic policies.
-                                    </p>
-                                    <p align=center>
-                                        <a href="mailto:jiwoo.kim@duke.edu" style="margin-right: 20px;"><i class="fas fa-envelope"></i> Email</a> 
-                                        <a href="data/Jiwoo_Kim_CV.pdf" style="margin-right: 20px;"><i class="fas fa-file-alt"></i> CV</a> 
-                                        <a href="https://github.com/indigoyeoma/" style="margin-right: 20px;"><i class="fab fa-github"></i> Github</a> 
-                                        <a href="https://scholar.google.com/citations?hl=en&user=ahT1fqsAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                                    </p>
 
-                                    
-                                </td>
-                                <td style="padding:2.5%;width:40%;max-width:40%">
-                                    <img style="width:100%;max-width:100%" alt="profile photo" src="images/Jiwoo_kim_2.jpg">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <!-- Top navigation (al-folio style) -->
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a class="brand" href="#">Jiwoo Kim</a>
+            <ul class="nav-links">
+                <li><a class="active" href="#about">about</a></li>
+                <li><a href="#news">news</a></li>
+                <li><a href="#publications">publications</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="data/Jiwoo_Kim_CV.pdf">cv</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <i class="fas fa-sun icon-sun"></i>
+                        <i class="fas fa-moon icon-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <main class="container page">
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <heading>News</heading>
+        <!-- About / Header -->
+        <section id="about" class="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h1 class="page-title">Jiwoo Kim</h1>
+                    <p class="subhead">
+                        ECE Ph.D. student &middot; <a href="https://duke.edu">Duke University</a>
+                    </p>
 
-                                    <ul style="list-style-type: disc; padding-left: 20px;">
-                                        <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Apr. 2024]</strong> I will start my ECE Ph.D. at Duke, beginning Fall 2024.</li>
-                                        <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Apr. 2024]</strong> Our paper <em>"Diffusion-EDFs: Bi-equivariant Denoising Generative Modeling on SE(3) for Visual Robotic Manipulation"</em> has been selected as a <strong>Highlight (11.9% of accepted papers)</strong> at <strong>CVPR 2024</strong>.</li>
-                                        <!-- <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Feb. 2024]</strong> Our paper <em>"Diffusion-EDFs: Bi-equivariant Denoising Generative Modeling on SE(3) for Visual Robotic Manipulation"</em> has been accepted to <strong>CVPR 2024.</strong></li> -->
-                                        <!-- <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Oct. 2023]</strong> Our paper <em>"Denoising Heat-inspired Diffusion with Insulators for Collision Free Motion Planning"</em> has been accepted to <strong>NeurIPS 2023 Workshop on Diffusion Models</strong>.</li> -->
-                                        <!-- <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Oct. 2023]</strong> We won the Best Technical Demonstration Award for Diffusion-EDFs at the 5th Yonsei University Mechanical Engineering Graduate Student Academic Conference.</li> -->
-                                        <!-- <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Sept. 2023]</strong> Our new paper <em>"Diffusion-EDFs: Bi-equivariant Denoising Generative Modeling on SE(3) for Visual Robotic Manipulation"</em> available on Arxiv.</li> -->
-                                        <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Jul. 2023]</strong> We won the Best Paper Award in <strong>Workshop on Symmetries in Robot Learning at RSS 2023</strong>.</li>
-                                        <li style="margin-bottom: 5px;"><strong style="color: darkblue;">[Jun. 2023]</strong> Our paper <em>"Robotic Manipulation Learning with Equivariant Descriptor Fields: Generative Modeling, Bi-equivariance, Steerability, and Locality"</em> has been accepted to a <strong>RSS Workshop on Symmetries in Robot Learning 2023 (Oral)</strong>.</li>
-                                        
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <p>
+                        I am an ECE Ph.D. student at Duke University, advised by
+                        <a href="https://people.duke.edu/~mp275/">Prof. Miroslav Pajic</a>,
+                        and obtained my B.S. in EEE from Yonsei University under
+                        <a href="https://mlcs.yonsei.ac.kr/Professor.html">Prof. Jongeun Choi</a>.
+                        My research focuses on generative models for physical AI, with an emphasis on real-world deployment.
+                    </p>
 
+                    <ul class="social">
+                        <li><a href="mailto:jiwoo.kim@duke.edu" title="email"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="data/Jiwoo_Kim_CV.pdf" title="CV"><i class="fas fa-file-alt"></i></a></li>
+                        <li><a href="https://scholar.google.com/citations?hl=en&user=ahT1fqsAAAAJ" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>
+                        <li><a href="https://github.com/indigoyeoma/" title="GitHub"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <heading>Publications</heading> ( * : indicates equal contribution)
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
+                <div class="about-photo">
+                    <img class="profile-img" src="images/Jiwoo_kim_2.JPG" alt="Jiwoo Kim">
+                    <p class="photo-caption">Durham, NC</p>
+                </div>
+            </div>
+        </section>
 
-                            <tr>
-                                <td style="padding:20px;width:30%;vertical-align:middle">
-                                    <img src='video/bottle_demo.gif' width="100%" />
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle><a href="https://sites.google.com/view/diffusion-edfs/home">Diffusion-EDFs: Bi-equivariant Denoising Generative Modeling on SE(3) for Visual Robotic Manipulation</a></papertitle>
-                                    <br>
-                                    Hyunwoo Ryu, <strong>Jiwoo Kim</strong>, Junwoo Chang, Hyun Seok Ahn, Taehan Kim, Yubin Kim, Joohwan Seo, Jongeun Choi, Roberto Horowitz
-                                    <br>
-                                    <em>CVPR</em>, 2024 
-                                    <br>
-                                    <span style="color:red;"><strong>Highlight (11.9% of accepted papers)</strong></span>
-                                    <br>
-                                    <a href="https://sites.google.com/view/diffusion-edfs/home">Project Page</a> / <a href="https://arxiv.org/abs/2309.02685">Arxiv</a> / <a href="https://github.com/tomato1mule/diffusion_edf"> Code</a>
-                                    <br>
-    
-                                    <p></p>
-                                    <p>
-                                    We present Diffusion-EDFs, a novel approach that incorporates spatial roto-translation equivariance, i.e., SE(3)-equivariance to diffusion generative modeling.
-                                    </p>
-                                </td>
-                            </tr>
+        <!-- News -->
+        <section id="news" class="news">
+            <h2 class="section-title">news</h2>
+            <table class="news-table">
+                <tbody>
+                    <tr>
+                        <th scope="row">Apr 2026</th>
+                        <td><em>NNiT</em> accepted to <strong>ICML 2026</strong>.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Apr 2024</th>
+                        <td>Started ECE Ph.D. at Duke.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Apr 2024</th>
+                        <td><em>Diffusion-EDFs</em> selected as a <strong>Highlight (top 11.9%)</strong> at <strong>CVPR 2024</strong>.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jul 2023</th>
+                        <td>Best Paper Award, <strong>RSS 2023 Workshop on Symmetries in Robot Learning</strong>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-                            <tr>
-                                <td style="padding:20px;width:30%;vertical-align:middle">
-                                    <img src='images/denoising_heat.png' width="100%" />
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle><a href="https://sites.google.com/yonsei.ac.kr/denoisingheat">Denoising Heat-inspired Diffusion with Insulators for Collision Free Motion Planning</a></papertitle>
-                                    <br>
-                                    Junwoo Chang*, Hyunwoo Ryu*, <strong>Jiwoo Kim</strong>, Soochul Yoo, Joohwan Seo, Nikhil Prakash, Jongeun Choi, Roberto Horowitz
-                                    <br>
-                                    <em>Neurips Workshop on Diffusion Models</em>, 2023 
-                                    <br>
-                                    <a href="https://sites.google.com/yonsei.ac.kr/denoisingheat">Project Page</a> / <a href="https://arxiv.org/abs/2310.12609">Arxiv</a>
-                                    <br>
-                                    <p></p>
-                                    <p>
-                                        We present a method that, during inference time, simultaneously generates only reachable goals and plans motions that avoid obstacles, all from a single visual input.
-                                    </p>
-                                </td>
-                            </tr>
+        <!-- Selected Publications -->
+        <section id="publications" class="publications">
+            <h2 class="section-title">publications</h2>
+            <p class="muted footnote-only">
+                <span class="footnote">(* indicates equal contribution)</span>
+            </p>
 
-                            <tr>
-                                <td style="padding:20px;width:30%;vertical-align:middle">
-                                    <img src='images/edf.png' width="100%" />
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <papertitle><a href="https://openreview.net/forum?id=heTTJfkTQC&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Droboticsfoundation.org%2FRSS%2F2023%2FWorkshop%2FSymmetry%2FAuthors%23your-submissions)">Robotic Manipulation Learning with Equivariant Descriptor Fields: Generative Modeling, Bi-equivariance, Steerability, and Locality</a></papertitle>
-                                    <br>
-                                    <strong>Jiwoo Kim*</strong>, Hyunwoo Ryu*, Jongeun Choi, Joohwan Seo, Nikhil Prakash, Ruolin Li, Roberto Horowitz
-                                    <br>
-                                    <em>RSS Workshop on Symmetries in Robot Learning</em>, 2023 
-                                    <br>
-                                    <span style="color:red;"><strong>Oral, Best Paper Award</strong></span>
-                                    <br>
-                                    <a href="https://openreview.net/forum?id=heTTJfkTQC&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Droboticsfoundation.org%2FRSS%2F2023%2FWorkshop%2FSymmetry%2FAuthors%23your-submissions)">OpenReview</a>
-                                    <br>
-                                    <p></p>
-                                    <p>
-                                    We introduce the recently proposed Equivariant Descriptor Fields (EDFs), focusing on the four key model properties: generative modeling, bi-equivariance, steerable representation, and locality.
-                                    </p>
-                                </td>
-                            </tr>
+            <ol class="bibliography">
 
-                            
-                        
-                    </table>
+                <!-- NNiT -->
+                <li class="pub">
+                    <div class="pub-thumb">
+                        <div class="thumb-stack">
+                            <img class="thumb-static" src="images/nnit_intro.png" alt="NNiT">
+                        </div>
+                    </div>
+                    <div class="pub-meta">
+                        <div class="title">
+                            NNiT: Width-Agnostic Neural Network Generation with Structurally Aligned Weight Spaces
+                        </div>
+                        <div class="authors">
+                            <strong>Jiwoo Kim</strong>, Swarajh Mehta, Hao-Lun Hsu, Hyunwoo Ryu, Yudong Liu, Miroslav Pajic
+                        </div>
+                        <div class="venue"><em>ICML</em>, 2026</div>
+                        <div class="links">
+                            <a href="https://arxiv.org/abs/2603.00180">arXiv</a>
+                        </div>
+                        <p class="abstract">
+                            We introduce NNiT, which generates MLP weights in a width-agnostic manner by tokenizing weight matrices into patches and modeling them as locally structured fields. NNiT generalizes to architecture topologies unseen during training, while baseline approaches fail to generalize.
+                        </p>
+                    </div>
+                </li>
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <heading>Projects</heading>
-                                    <p>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                    
-                            <tr>
-                                <td style="padding:20px;width:30%;vertical-align:middle">
-                                    <img src='video/demo_website.gif' width="100%" />
-                                </td>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                        <papertitle>Diffusion-EDF real world experiment with Panda</papertitle>
-                                    <br>
-                                    <em>The 5th Yonsei University Mechanical Engineering Graduate Student Academic Conference</em>, 2023
-                                    <br>
-                                    <span style="color:red;"><strong>Best Demo Presentation</strong></span>
-                                    <br>
-                                    <!-- <a href="https://youtu.be/n_YRcfQJWKs">Youtube</a> -->
-                                    
-                                </td>
-                            </tr>
-                    
-                    </table>
+                <!-- Diffusion-EDFs -->
+                <li class="pub" onmouseout="diffedf_stop()" onmouseover="diffedf_start()">
+                    <div class="pub-thumb">
+                        <div class="thumb-stack">
+                            <img class="thumb-static" src="images/diffusion_edf.png" alt="Diffusion-EDFs">
+                            <img class="thumb-hover" id="diffedf_image" src="video/bottle_demo.gif" alt="Diffusion-EDFs animation">
+                        </div>
+                    </div>
+                    <div class="pub-meta">
+                        <div class="title">
+                            <a href="https://sites.google.com/view/diffusion-edfs/home">
+                                Diffusion-EDFs: Bi-equivariant Denoising Generative Modeling on SE(3) for Visual Robotic Manipulation
+                            </a>
+                        </div>
+                        <div class="authors">
+                            Hyunwoo Ryu, <strong>Jiwoo Kim</strong>, Junwoo Chang, Hyun Seok Ahn, Taehan Kim, Yubin Kim,
+                            Joohwan Seo, Jongeun Choi, Roberto Horowitz
+                        </div>
+                        <div class="venue"><em>CVPR</em>, 2024 <span class="badge badge-highlight">Highlight &middot; top 11.9%</span></div>
+                        <div class="links">
+                            <a href="https://sites.google.com/view/diffusion-edfs/home">project</a>
+                            <a href="https://arxiv.org/abs/2309.02685">arXiv</a>
+                            <a href="https://github.com/tomato1mule/diffusion_edf">code</a>
+                        </div>
+                        <p class="abstract">
+                            We introduce SE(3)-equivariant diffusion generative modeling for visual robotic manipulation,
+                            achieving sample-efficient policy learning that generalizes across object poses and viewpoints.
+                        </p>
+                    </div>
+                </li>
 
-                    
+                <!-- Denoising Heat -->
+                <li class="pub">
+                    <div class="pub-thumb">
+                        <div class="thumb-stack">
+                            <img class="thumb-static" src="images/denoising_heat.png" alt="Denoising Heat">
+                        </div>
+                    </div>
+                    <div class="pub-meta">
+                        <div class="title">
+                            <a href="https://sites.google.com/yonsei.ac.kr/denoisingheat">
+                                Denoising Heat-inspired Diffusion with Insulators for Collision-Free Motion Planning
+                            </a>
+                        </div>
+                        <div class="authors">
+                            Junwoo Chang*, Hyunwoo Ryu*, <strong>Jiwoo Kim</strong>, Soochul Yoo, Joohwan Seo,
+                            Nikhil Prakash, Jongeun Choi, Roberto Horowitz
+                        </div>
+                        <div class="venue"><em>NeurIPS Workshop on Diffusion Models</em>, 2023</div>
+                        <div class="links">
+                            <a href="https://sites.google.com/yonsei.ac.kr/denoisingheat">project</a>
+                            <a href="https://arxiv.org/abs/2310.12609">arXiv</a>
+                        </div>
+                        <p class="abstract">
+                            At inference time, we simultaneously generate only reachable goals and plan obstacle-free motions
+                            from a single visual input.
+                        </p>
+                    </div>
+                </li>
 
-                     
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:0px">
-                                    <br>
-                                    <p style="text-align:right;font-size:small;">
-                                        <a href="https://github.com/jonbarron/jonbarron_website">template</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- EDF Workshop -->
+                <li class="pub">
+                    <div class="pub-thumb">
+                        <div class="thumb-stack">
+                            <img class="thumb-static" src="images/edf.png" alt="EDF">
+                        </div>
+                    </div>
+                    <div class="pub-meta">
+                        <div class="title">
+                            <a href="https://openreview.net/forum?id=heTTJfkTQC">
+                                Robotic Manipulation Learning with Equivariant Descriptor Fields:
+                                Generative Modeling, Bi-equivariance, Steerability, and Locality
+                            </a>
+                        </div>
+                        <div class="authors">
+                            <strong>Jiwoo Kim*</strong>, Hyunwoo Ryu*, Jongeun Choi, Joohwan Seo, Nikhil Prakash,
+                            Ruolin Li, Roberto Horowitz
+                        </div>
+                        <div class="venue"><em>RSS Workshop on Symmetries in Robot Learning</em>, 2023
+                            <span class="badge badge-award">Oral &middot; Best Paper</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://openreview.net/forum?id=heTTJfkTQC">OpenReview</a>
+                        </div>
+                        <p class="abstract">
+                            We introduce Equivariant Descriptor Fields (EDFs) and analyze four key properties:
+                            generative modeling, bi-equivariance, steerable representations, and locality.
+                        </p>
+                    </div>
+                </li>
 
-                </td>
-            </tr>
-    </table>
+            </ol>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="talks">
+            <h2 class="section-title">projects</h2>
+
+            <ol class="bibliography">
+                <li class="pub">
+                    <div class="pub-thumb">
+                        <div class="thumb-stack">
+                            <img class="thumb-static" src="video/demo_website_poster.png" alt="Franka demo">
+                            <img class="thumb-hover" src="video/demo_website.gif" alt="Franka demo animation">
+                        </div>
+                    </div>
+                    <div class="pub-meta">
+                        <div class="title">Diffusion-EDF Real-World Experiment with Franka Panda</div>
+                        <div class="venue"><em>5th Yonsei Mechanical Engineering Graduate Student Academic Conference</em>, 2023
+                            <span class="badge badge-award">Best Demo</span>
+                        </div>
+                        <p class="abstract">
+                            Real-robot deployment of Diffusion-EDFs on a 7-DoF Franka Panda for visual manipulation.
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <span>&copy; <span id="year"></span> Jiwoo Kim. </span>
+            <span>Built with HTML/CSS in the style of <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function diffedf_start() { document.getElementById('diffedf_image').style.opacity = 1; }
+        function diffedf_stop()  { document.getElementById('diffedf_image').style.opacity = 0; }
+
+        // Theme toggle (dark / light)
+        (function() {
+            const root = document.documentElement;
+            const btn = document.getElementById('theme-toggle');
+            const stored = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const initial = stored || (prefersDark ? 'dark' : 'light');
+            root.setAttribute('data-theme', initial);
+
+            btn.addEventListener('click', () => {
+                const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+            });
+        })();
+    </script>
 </body>
-
-
 
 </html>
