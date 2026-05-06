@@ -1,1 +1,3 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+# indigoyeoma.github.io
+
+Personal academic homepage of [Jiwoo Kim](https://indigoyeoma.github.io), built using [al-folio](https://github.com/alshedivat/al-folio).
